@@ -1,0 +1,22 @@
+{
+  "name": "Webpack5",
+  "version": "1.0.0",
+  "description": "webpack5",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rraghav123/Webpack5.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
