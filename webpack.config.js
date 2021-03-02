@@ -1,13 +1,18 @@
-let mode = "development"
-
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+let mode = "development"
+// Hack required because HMR doesn't watch css (webpack-5) because of browerslist
+let target = "web"
+
 
 if(process.env.NODE_ENV === "production") {
     mode = "production"
+    target = "browserslist"
 }
 
 module.exports = {
     mode,
+    target,
     module: {
         rules: [
             {
