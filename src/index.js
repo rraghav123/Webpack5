@@ -1,7 +1,9 @@
+import './styles/index.scss';
+
 const elvenShiledRecipe = {
     leatherStrips: 2,
     ironIngot: 1,
-    refinedMoonstone: 4,
+    refinedMoonstone: 3,
 }
 
 const elvenShiledRecipeNew = {
