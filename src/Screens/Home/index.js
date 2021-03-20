@@ -4,7 +4,12 @@ import Header from '../../components/Header';
 
 import styles from './index.scss';
 
-function Home({ fetchUsers, home: { users }, setNewUser }) {
+function Home({ fetchUsers, home: { users }, setNewUser, isAuthenticated, history }) {
+    useEffect(() => {
+        if(!isAuthenticated) {
+            history.push('/');
+        }
+    }, [isAuthenticated])
     const [filteredResult, setFilteredResult] = useState(users);
     const [userSearchQuery, setUserSearchQuery] = useState('');
 

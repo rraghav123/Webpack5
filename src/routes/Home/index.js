@@ -11,7 +11,7 @@ function HomeRoute(props) {
 }
 
 const mapStateToProps = state => {
-    return { home: state.home }
+    return { home: state.home, isAuthenticated: state.login.isAuthenticated }
 }
 
 export default connect(

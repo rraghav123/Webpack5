@@ -1,8 +1,8 @@
 import { LOGIN_ACTIONS_TYPE } from '../../actions/actionTypes';
 
 const initialState = {
-    userName: 'admin',
-    password: 'password',
+    userName: '',
+    password: '',
     isAuthenticated: false,
 }
 
