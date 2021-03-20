@@ -1,16 +1,13 @@
-import './styles/index.scss';
+/*
+As we look at packages like react-native, react-art, react-canvas, and react-three, it's become clear that the beauty and essence of React
+has nothing to do with browsers or the DOM.
 
-const elvenShiledRecipe = {
-    leatherStrips: 2,
-    ironIngot: 1,
-    refinedMoonstone: 3,
-}
+To make this more clear and to make it easier to build more environments that React can render to, we're splitting the
+main react package into two: react and react-dom. Fundamentally, the idea of React has nothing to do with browsers,
+ they just happen to be one of many targets for rendering trees of components into.The ReactDOM package has allowed the
+  developers to remove any non-essential code from the React package and move it into a more appropriate repository.
+*/
+import { render } from 'react-dom';
+import App from './components/App';
 
-const elvenShiledRecipeNew = {
-    ...elvenShiledRecipe,
-    leather: 20,
-    refinedMoonstone: 20,
-}
-
-
-console.log({ elvenShiledRecipe, elvenShiledRecipeNew });
+render(<App />, document.getElementById('root'));
